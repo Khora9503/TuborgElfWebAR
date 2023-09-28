@@ -8,12 +8,13 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     
-<script src = "sdk/blippar-webar-sdk-v1.6.1/webar-sdk/webar-sdk-v1.6.1.min.js?license-key=4f891d4f-239a-420b-9f31-76c7e8c70d11"
+<script src = "sdk/blippar-webar-sdk-v1.6.3/webar-sdk/webar-sdk-v1.6.3.min.js?license-key=4f891d4f-239a-420b-9f31-76c7e8c70d11"
 webar-mode="surface-tracking"
 static-camera = "true"
 auto-start="false"
 auto-init="false"
-render-scene-on-desktop="true"
+enable-photo-ui="true"
+render-scene-on-desktop="false"
 show-qr-card-on-desktop="false"
 
 enable-tracking-on-desktop= "false"
@@ -21,7 +22,7 @@ enable-mirroring-on-desktop= "false"
 auto-marker-detection ="true"
 show-guide-animation-url=""
 rendering-engine="unity"
-logo-src="images/LogoTest.png"
+logo-src="images/ElfLogo.png"
 logo-height="200px"
 logo-width="200px"
 loading-progress-type="default"
@@ -119,7 +120,7 @@ const stageObjectName = "webarStage";
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
+        config.devicePixelRatio = 3;
       }
       else {
         // Desktop Unity Container: set the container/canvas for full screen
